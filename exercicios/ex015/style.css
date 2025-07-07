@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(160, 159, 233);
+    color: rgb(0, 0, 0);
+    
+
+}
+h1{
+    color: rgb(182, 45, 182);
+    background-color: rgb(95, 235, 216);
+}
+h2{
+    color: rgb(129, 32, 32);
+ font-size: larger;
+}
+p{
+   color: rgb(83, 104, 6);
+}

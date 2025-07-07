@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+
+<body>
+    <h1>Imagens</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu
+        navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagen-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagen-m.png" type="image/png">
+        <img src="imagens/imagen-g.png" alt="imagen flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a produzir audio em HTML5</p>
+    <!--MP3 WAV OGG ESSES SAOO OS TIPOS DE AUDIO ULTILIZADOS-->
+    
+    <audio preload="metadata" controls loop>
+        <source src="Audio/till-let-go-neffex-mp3.mp3" type="audio/mpeg">
+        <source src="Audio/till-let go-ogg.ogg" type="audio/ogg">
+        <source src="Audio/till-let go-ogg.wav" type="audio/wav">
+</audio>
+
+
+</body>
+
+</html> 
