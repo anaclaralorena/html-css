@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt.br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Tabela</title>
+    <style>
+        table {
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+
+        }
+
+
+        td {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .numerob1{
+            text-align: left ;
+        }
+        .numerod3{
+            text-align: right;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Minha primeira tabela basica</h1>
     <table>
@@ -13,28 +40,29 @@
             <td>A2</td>
             <td>A3</td>
         </tr>
-        <tr>
-            <td>B1</td>
-            <td>B2/td>
+        <tr >
+            <td class="numerob1">B1</td>
+            <td>B2</td>
             <td>B3</td>
-         </tr>
-            <tr>
-                <td>C1</td>
-                <td>C2</td>
-                <td>C3</td>
-
         </tr>
         <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+
+        </tr>
+        <tr >
             <td>D1</td>
             <td>D2</td>
-            <td>D3</td>
+            <td class="numerod3">D3</td>
 
-            
+
 
         </tr>
-           
-     
+
+
     </table>
-    
+
 </body>
+
 </html>
