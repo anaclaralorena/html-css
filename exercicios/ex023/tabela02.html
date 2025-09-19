@@ -11,18 +11,38 @@
         }
 
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
 
-        } 
-        thead , tfoot{
+        }
+
+        caption {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 1.5em;
+
+            padding: 15px;
+            background-color: rgba(167, 137, 56, 0.541);
+
+
+        }
+        tbody  tr:nth-child(2n){
+            background-color: rgba(105, 105, 105, 0.514);
+        }
+        
+
+
+        thead,
+        tfoot {
             background-color: rgba(68, 68, 68, 0.616);
         }
 
-        td , th{
-          
+        td,
+        th {
+
             border: 1px solid black;
-           
+            font-size: 1.2em;
+
             padding: 10px;
         }
 
@@ -36,10 +56,11 @@
 <body>
     <h1>Tabelas Grandes</h1>
     <table>
+        <caption>Populacao Das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao </th>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao </th>
             </tr>
 
         </thead>
@@ -155,7 +176,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
 
