@@ -7,16 +7,23 @@
     <title>Tabela</title>
     <style>
         body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           font-family:'Times New Roman', Times, serif
         }
 
         table {
             border-collapse: collapse;
             text-align: center;
         }
-        thead{
-            background-color: rgba(0, 0, 255, 0.466)
+        thead{  
+            color: white;
+            background-color: rgba(0, 0, 0, 0.733);
+          
         }
+        
+  tr:nth-child(5){
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+  }
     
 
 
@@ -27,8 +34,13 @@
             width: 20px;
             padding: 20px;
         }
+        tfoot{
+             color: white;
+            background-color: rgba(0, 0, 0, 0.733);
+           
+        }
 
-        .notas {}
+      
     </style>
 </head>
 
@@ -39,8 +51,6 @@
                 <th rowspan="2">Area</th>
                 <th rowspan="2">Diciplinas</th>
                 <th colspan="2">Notas</th>
-
-
                 <th rowspan="2">Media</th>
 
             </tr>
@@ -76,9 +86,9 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="media">
          
-                 h> Medidas de Exatas </th>
+                <th colspan="4"> Medidas de Exatas </th>
                 <td>0.0</td>
             </tr>
             <tr>
@@ -93,12 +103,15 @@
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
-            </tr>
-            <tr>
-                <th colspan="4">Medidas de Humanas</th>
-                <td>0.0</td>
-            </tr>
-        </tbory>
+            </tr> 
+         </tbory>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Medidas de Humanas</th>
+                    <td>0.0</td>
+                </tr>
+            </tfoot>
+      
 
 
 
